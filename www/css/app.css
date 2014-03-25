@@ -78,6 +78,57 @@ body{
 
 
 
+/* ************************* */
+/* REGISTRO 	   ************* */
+/* ************************* */
+
+
+#SeccionRegistro{
+
+	position: absolute;
+	background-color: #eb6621;
+}
+#SeccionRegistro_bg_registro{
+	position: absolute;
+}
+#SeccionRegistro_btn{
+	position: absolute;
+	top: 482px;
+	left: 414px;
+}
+
+#SeccionRegistro_txt_nombre{
+	position: absolute;
+	left: 370px;
+	top: 158px;
+}
+#SeccionRegistro_txt_apellido{
+	position: absolute;
+	left: 370px;
+	top: 199px;
+}
+#SeccionRegistro_txt_ci{
+	position: absolute;
+	left: 370px;
+	top: 240px;
+}
+#SeccionRegistro_txt_dir{
+	position: absolute;
+	left: 370px;
+	top: 280px;
+}
+
+#SeccionRegistro_txt_email{
+	position: absolute;
+	left: 370px;
+	top: 361px;
+}
+
+#SeccionRegistro_txt_tel{
+	position: absolute;
+	left: 370px;
+	top: 321px;
+}
 
 
 
@@ -85,10 +136,26 @@ body{
 
 
 
+/* ************************* */
+/* SELECCION */
+/* ************************* */
 
 
+#SeccionSeleccion{
+
+	position: absolute;
+}
+#SeccionSeleccion_titulo{
+	position: absolute;
+	left: 40px;
+	top: 1px;
+}
 
 
+.ItemDisenador{
+
+	
+}
 
 
 

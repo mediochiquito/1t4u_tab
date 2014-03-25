@@ -11,6 +11,9 @@ function App(){
 	this.header = null;
 	this.server = 'http://metamorf.com/';
 
+	this.disenador_elegido = 0
+	this.udid = 'web'
+
 	var tablas_creadas = 0;
 	var array_tablas_a_crear;
 	
@@ -23,7 +26,7 @@ function App(){
 
 		document.addEventListener('deviceready', deviceready, false);
 		$(document).bind('touchmove', doPrevent);
-
+		
 	}
 
 	
@@ -171,7 +174,7 @@ function App(){
 
     function crearTabla_Registro($tx){
 		
-		$tx.executeSql('CREATE TABLE IF NOT EXISTS "registro" ("registro_id" INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL , "registro_nombre" VARCHAR, "registro_apellido" VARCHAR, "registro_ci" VARCHAR, "registro_dir" VARCHAR, "registro_tel" VARCHAR, "registro_email" VARCHAR, "registro_fecha_hora" DATETIME) ', [], comprobacion_total_tablas_creadas);
+		$tx.executeSql('CREATE TABLE IF NOT EXISTS "registro" ("registro_id" INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL , "registro_nombre" VARCHAR, "registro_apellido" VARCHAR, "registro_ci" VARCHAR, "registro_dir" VARCHAR, "registro_tel" VARCHAR, "registro_email" VARCHAR, "registro_id_disenador" INTEGER, "registro_fecha_hora" DATETIME) ', [], comprobacion_total_tablas_creadas);
 
     } 
  

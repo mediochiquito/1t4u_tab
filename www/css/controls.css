@@ -35,19 +35,21 @@
 .InputText{
 	
 	-webkit-appearance: none;
-	
 	padding: 0px 10px 0px 10px;
 	outline: none;
-	font-family: 'GothamBook';
+	font-family: 'Conv_Casual_Brush';
 	font-size: 12px;
-	-webkit-border-radius: 5px;
 	-webkit-appearance: none;
-	height: 31px;
-	border-radius: 5px;
-	border: solid 1px #ccc;
-	
+	height: 36px;
 	position: absolute;
+	background-color: transparent;
+
+	color: #fff;
+	text-align: center;
+	font-size: 31px;
+	border: none;
 }
+
 .InputTextError{
 	
 	-webkit-appearance: none;
@@ -64,10 +66,12 @@
 	position: absolute;
 
 }
+
 .InputTextEnable{
 	background-color: #fff;
 	color: #666;
 }
+
 .InputTextDisnable{
 	opacity: .4;
 	background-color: #ccc;
@@ -85,6 +89,7 @@
 	width: 140px;
 	text-align: center;
 }
+
 .BotonAzul img{
 	position: absolute;
 	left: 8px;
