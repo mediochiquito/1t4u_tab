@@ -14,7 +14,7 @@ function App(){
 	var tablas_creadas = 0;
 	var array_tablas_a_crear;
 	
-	this.db = openDatabase('itau_tab_dise', '1.0', 'santanders_app_punta', 2000000);
+	this.db = openDatabase('itau_tab_dise', '1.0', 'itau_tab_dise', 2000000);
 
 	var self = this;
 	var tablas_creadas = 0;
@@ -138,11 +138,11 @@ function App(){
 		
 		tablas_creadas = 0;
 				
-		array_tablas_a_crear = new Array(crearTabla_Registros);
+		array_tablas_a_crear = new Array(crearTabla_Registro);
 
 		for(var func in array_tablas_a_crear){
 			array_tablas_a_crear[func]($tx);
-					}
+		}
 			
 	}
 
@@ -169,7 +169,7 @@ function App(){
 	}
 
 
-    function crearTabla_Registros($tx){
+    function crearTabla_Registro($tx){
 		
 		$tx.executeSql('CREATE TABLE IF NOT EXISTS "registro" ("registro_id" INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL , "registro_nombre" VARCHAR, "registro_apellido" VARCHAR, "registro_ci" VARCHAR, "registro_dir" VARCHAR, "registro_tel" VARCHAR, "registro_email" VARCHAR, "registro_fecha_hora" DATETIME) ', [], comprobacion_total_tablas_creadas);
 

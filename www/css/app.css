@@ -58,6 +58,42 @@ body{
 }
 
 
+/* ************************* */
+/* HOME */
+/* ************************* */
+
+
+#SeccionHome{
+
+	position: absolute;
+}
+#SeccionHome_placa0{
+	position: absolute;
+}
+#SeccionHome_btn{
+	position: absolute;
+	top: 442px;
+	left: 74px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

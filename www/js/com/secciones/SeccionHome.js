@@ -4,39 +4,23 @@ function SeccionHome()
 	this.main.id = 'SeccionHome';
 	this.ocultar(0);
 	
-	var promo = new Image()
-	promo.src = 'img/home/promo.png';
-	promo.id = 'SeccionHome_promo';
-	$(this.main).append(promo);
+	var placa0 = new Image()
+	placa0.src = 'img/placa0.png';
+	placa0.id = 'SeccionHome_placa0';
+	$(this.main).append(placa0);
 
-	var btn_mapa = new Boton2Frames('img/home/btn_mapa.png', 45, 130, doVerMapa);
-	btn_mapa.main.id = 'SeccionHome_btn_mapa';
-	$(this.main).append(btn_mapa.main);
 
-	var btn_descuentos = new Boton2Frames('img/home/btn_descuentos.png', 69, 130, doVerDescuentos)
-	btn_descuentos.main.id = 'SeccionHome_btn_descuentos'
-	$(this.main).append(btn_descuentos.main)
+	var btn = new Boton2Frames('img/btn_participa.png', 239, 160, doVerRegistro)
+	btn.main.id = 'SeccionHome_btn'
+	$(this.main).append(btn.main)
 
-	var btn_eventos = new Boton2Frames('img/home/btn_eventos.png', 47, 130, doVerEventos)
-	btn_eventos.main.id = 'SeccionHome_btn_eventos'
-	$(this.main).append(btn_eventos.main)
+	function doVerRegistro(){
 
-	function doVerDescuentos(){
-
-		app.secciones.go(app.secciones.seccioneventosofertas, 300, {solapa: 'ofertas'});
+		app.secciones.go(app.secciones.seccionregistro);
 
 	}
 
-	function doVerEventos(){
-		app.secciones.go(app.secciones.seccioneventosofertas, 300, {solapa: 'eventos'});
-	}
 
-
-	function doVerMapa(){
-
-		app.secciones.go(app.secciones.seccionmapa);
-
-	}
 
 }
 SeccionHome.prototype = new Base_Seccion();

@@ -5,33 +5,23 @@ function Secciones(){
   	this.main = document.createElement('div')
   	this.main.id = 'secciones'
 
+
   	this.seccionhome = new SeccionHome();
 	$(this.main).append(this.seccionhome.main)
 	this.seccionhome.ocultar(0);
 
+  	this.seccionregistro = new SeccionRegistro();
+	$(this.main).append(this.seccionregistro.main)
+	this.seccionregistro.ocultar(0);
 
-	this.seccioneventosofertas = new SeccionEventosOfertas();
-	$(this.main).append(this.seccioneventosofertas.main)
-	this.seccioneventosofertas.ocultar(0);
+  	this.seccionseleccion = new SeccionSeleccion();
+	$(this.main).append(this.seccionseleccion.main)
+	this.seccionseleccion.ocultar(0);
 
-	this.seccionmenu = new SeccionMenu();
-	$(this.main).append(this.seccionmenu.main)
-	this.seccionmenu.ocultar(0);
+  	this.seccionfin = new SeccionFin();
+	$(this.main).append(this.seccionfin.main)
+	this.seccionfin.ocultar(0);
 
-	this.seccionterms = new SeccionTerms();
-	$(this.main).append(this.seccionterms.main)
-	this.seccionterms.ocultar(0);
-/*
-	this.seccionmapaform = new SeccionMapaForm();
-	$(this.main).append(this.seccionmapaform.main)
-	this.seccionmapaform.ocultar(0);*/
-
-	this.secciontermsbanner = new SeccionTermsBanner();
-	$(this.main).append(this.secciontermsbanner.main);
-	this.secciontermsbanner.ocultar(0);
-	this.seccionmapa = new SeccionMapa();
-	$(this.main).append(this.seccionmapa.main)
-	this.seccionmapa.ocultar(0);
 
 	var historia = new Array()
 
@@ -72,12 +62,10 @@ function Secciones(){
 		var guardar_historia = true;
 		if(typeof($guardar_historia) != 'undefined') guardar_historia =  $guardar_historia;
 		
-		if($base_seccion.main.id == 'SeccionMenu') app.header.ocultar_menu()
-		else  app.header.mostrar_menu()
 
 		if($base_seccion==obj_seccion_actual) return;
 		var d = new Date()
-		//document.location.href = '#'  + d.getTime();
+
 		$(this.main).css({ display: 'block'});
 		
 		try{
