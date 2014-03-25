@@ -1,0 +1,118 @@
+.TextoArea{
+	
+	-webkit-appearance: none;
+	background-color: #fff;
+	border: solid 1px #ccc;
+	font-size: 20px;
+	color: #666;
+	font-family: 'Conv_FuturaBT Medium';
+	padding: 10px;
+	/*-webkit-box-shadow: 0px 0px 10px -5px #000;*/
+	border-radius: 0;
+
+}
+.Solapa{
+
+	width: 93px;
+	height: 36px;
+	border-radius: 7px 7px 0px 0px;
+	position: absolute;
+
+}
+
+.Solapa_txt{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 11px;
+	top: 13px;
+	font-family: 'GothamBold';
+	line-height: 13px;
+	pointer-events:none;
+}
+
+.InputText{
+	
+	-webkit-appearance: none;
+	
+	padding: 0px 10px 0px 10px;
+	outline: none;
+	font-family: 'GothamBook';
+	font-size: 12px;
+	-webkit-border-radius: 5px;
+	-webkit-appearance: none;
+	height: 31px;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	
+	position: absolute;
+}
+.InputTextError{
+	
+	-webkit-appearance: none;
+	padding: 0px 10px 0px 10px;
+	outline: none;
+	font-family: 'GothamBook';
+	font-size: 12px;
+	-webkit-border-radius: 5px;
+	-webkit-appearance: none;
+	height: 31px;
+	border-radius: 5px;
+	border: solid 1px #D35454;
+	background-color: #FFECEC;
+	position: absolute;
+
+}
+.InputTextEnable{
+	background-color: #fff;
+	color: #666;
+}
+.InputTextDisnable{
+	opacity: .4;
+	background-color: #ccc;
+}
+
+.BotonAzul{
+	
+	background-color: #3b5a99;
+	color: #fff;
+	font-family: 'GothamBold';
+	padding: 11px 0px 11px 0px;
+	font-size: 12px;
+	position: absolute;
+	border-radius: 7px;
+	width: 140px;
+	text-align: center;
+}
+.BotonAzul img{
+	position: absolute;
+	left: 8px;
+	top: 4px;
+}
+
+.Boton{
+	
+	background-image: -webkit-linear-gradient(bottom, #E91C24 30%, #F28F6C 100%);
+	color: #fff;
+	font-family: 'GothamBold';
+	padding: 11px 0px 11px 0px;
+	font-size: 12px;
+	position: absolute;
+	border-radius: 7px;
+	width: 140px;
+	text-align: center;
+}
+
+.Boton > div{
+	pointer-events:none;
+}
+
+.Boton2Frames{
+	overflow: hidden;
+}
+
+.Boton2Frames img{
+	position: absolute;
+
+}

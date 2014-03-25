@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.pimod.santanderapp" 
+        versionCode = "15" 
+        version   = "2.1">
+
+    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="fullscreen" value="true" />
+    <preference name="orientation" value="landscape" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="SplashScreen" value="splash" />
+    <preference name="splash-screen-duration" value="10000"/>
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="auto-hide-splash-screen"    value="false" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+
+    <preference name="android-minSdkVersion" value="11" />
+    <preference name="android-targetSdkVersion" value="14" />
+
+    <access origin="*" />
+    
+    <name>Todo diseñador tiene un ángel</name>
+    
+    <description>
+     
+    </description>
+
+    <gap:config-file platform="ios" parent="UIStatusBarHidden">
+        <true/>
+    </gap:config-file>
+
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+        <false/>
+    </gap:config-file>
+
+    <icon src="icon.png" />
+    <gap:splash src="splash.png" />
+
+    <icon src="img/icons/icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="img/icons/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="img/icons/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="img/icons/icon-76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="img/icons/icon-120.png" gap:platform="ios" width="120" height="120" />
+    <icon src="img/icons/icon-152.png" gap:platform="ios" width="152" height="152" />
+
+    <author href="https://build.phonegap.com" email="support@phonegap.com">
+        Hardeep Shoker 
+    </author>
+    
+    <gap:platform name="ios" /> 
+    <gap:platform name="android" />
+     
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+
+</widget>
