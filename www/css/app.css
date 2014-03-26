@@ -198,11 +198,105 @@ body{
 }
 #SeccionSeleccion_layout{
 	position: absolute;
-	left: 40px;
-	top: 1px;
+	left: 160px;
+	top: 110px;
 }
 
 
+
+/*REPORTES*/
+
+
+
+#btn_reportes{
+	position: absolute;
+	
+	top: 0px;
+	left: 0px;
+
+}
+
+
+
+#reporte_main{
+
+	font-family: 'Arial';
+	font-size: 14px;
+
+}
+
+#reporte_main table{
+
+	width: 95%;
+	margin: 20px;
+	background-color: #f4f4f4;
+
+}
+
+.rep_negrita{
+	background-color: #333;
+	color:#fff;
+}
+
+#reporte_main div{
+	
+	padding: 4px;
+
+}
+
+#reporte_main tr td{
+	border-bottom: solid 1px #666;
+	padding: 4px;
+	margin: 0px;
+
+}
+#Reporte{
+	background-color: #fff;
+	position: absolute;
+	height: 768px;
+	top: 0px;
+	width: 1024px;	
+	display: none;
+}
+
+#totales{
+
+	position: absolute;
+
+	top: 20px;
+	
+
+	left: 20px;
+	
+
+	width: 390px;
+
+}
+#close_btn_reporte{
+
+	position: absolute;
+
+	top: 26px;
+	
+
+	right: 20px;
+}
+
+
+#holder_tabla_rep{
+
+	width: 1007px;
+	
+
+	height: 683px;
+	position: absolute;
+	top: 71px;
+	overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
+	margin: 0px !important;
+
+}
 
 
 

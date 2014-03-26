@@ -13,6 +13,16 @@ function SeccionHome()
 	btn.main.id = 'SeccionHome_btn'
 	$(this.main).append(btn.main)
 
+	var btn_blank = new Boton2Frames('img/reportes/blank.png', 100, 200, function (){
+
+		app.reportes.mostrar()
+	})
+	btn_blank.main.id = 'btn_reporte'
+	$(this.main).append(btn_blank.main)
+
+
+
+
 	function doVerRegistro(){
 
 		app.secciones.go(app.secciones.seccionregistro);

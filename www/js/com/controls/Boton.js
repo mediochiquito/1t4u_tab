@@ -14,7 +14,6 @@ function Boton($html, $callback, $className){
 
 	if(app.es_touch()){
 
-		//this.main.addEventListener("touchend", do_click);
 		this.main.addEventListener("touchend", do_mouseout);
 		this.main.addEventListener("touchstart", do_mouseover);
 		this.main.addEventListener("touchstart", do_touchstart);

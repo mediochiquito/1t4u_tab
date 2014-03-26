@@ -33,7 +33,7 @@ function SeccionFin()
 															
 															setTimeout(function (){
 
-																app.secciones.go(app.secciones.seccionseleccion);
+																//app.secciones.go(app.secciones.seccionhome);
 
 															}, 3000);
 															
