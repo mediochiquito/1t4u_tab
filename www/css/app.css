@@ -187,6 +187,24 @@ body{
 
 
 
+/* ************************* */
+/* FIN */
+/* ************************* */
+
+
+#SeccionFin{
+	background-color: #eb6621;
+	position: absolute;
+}
+#SeccionSeleccion_layout{
+	position: absolute;
+	left: 40px;
+	top: 1px;
+}
+
+
+
+
 
 
 /* LOADING */

@@ -41,42 +41,20 @@ function SeccionRegistro()
 
 		var r = true;
 
-		if(this.txt_nombre.getValor()=='') {r = false;}
-		if(this.txt_apellido.getValor()=='') { r = false;}
-		if(this.txt_ci.getValor()=='') { r = false;}
-		if(this.txt_dir.getValor()=='') { r = false;}
-		if(this.txt_tel.getValor()=='') {  r = false;}
-		if(this.txt_email.getValor()=='') {  r = false;}
+		if(app.secciones.seccionregistro.txt_nombre.getValor()=='') {r = false;}
+		if(app.secciones.seccionregistro.txt_apellido.getValor()=='') { r = false;}
+		if(app.secciones.seccionregistro.txt_ci.getValor()=='') { r = false;}
+		if(app.secciones.seccionregistro.txt_dir.getValor()=='') { r = false;}
+		if(app.secciones.seccionregistro.txt_tel.getValor()=='') {  r = false;}
+		if(app.secciones.seccionregistro.txt_email.getValor()=='') {  r = false;}
 
 
 		if(!r){
 			app.alerta('Todos los campos son obligatorios.');
 		}else{
 
-			
-	        app.db.transaction(function (tx) {
-	        	
-/*				tx.executeSql('INSERT OR IGNORE INTO "registro" ("registro_nombre","registro_apellido","registro_ci","registro_dir","registro_tel", "registro_email", "registro_fecha_hora") VALUES (?,?,?,?,?,?,DATETIME("NOW"))', 
-														  [
-														 
-														  txt_nombre.getValor(), 
-														  txt_apellido.getValor(), 
-														  txt_ci.getValor(), 
-														  txt_dir.getValor(), 
-														  txt_tel.getValor(),
-														  txt_email.getValor()
-
-														  ], function(){
-
-														  	app.secciones.go(app.secciones.seccionseleccion);
-
-														  }, function(){
-
-														  	app.alerta('Ocurrio un error al insertar el registro!s')
-
-														  });
-		*/
-			}, app.db_errorGeneral);
+			app.secciones.go(app.secciones.seccionseleccion);
+	       
 				
 		}
 		

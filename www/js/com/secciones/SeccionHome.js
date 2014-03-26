@@ -15,8 +15,8 @@ function SeccionHome()
 
 	function doVerRegistro(){
 
-		//app.secciones.go(app.secciones.seccionregistro);
-		app.secciones.go(app.secciones.seccionseleccion);
+		app.secciones.go(app.secciones.seccionregistro);
+		//app.secciones.go(app.secciones.seccionseleccion);
 	}
 
 

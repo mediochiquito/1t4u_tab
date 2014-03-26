@@ -60,8 +60,8 @@ function ItemDisenador($id)
 
 	function doClickSeleccion(){
 
-	
-
+		
+		app.disenador_elegido = $id;
 		var event = jQuery.Event( "click_item_dise" );
 		event.id = $id;
 		$(document).trigger( event );
@@ -71,8 +71,8 @@ function ItemDisenador($id)
 	
 	function doConfirmar(){
 
-		
 
+		app.secciones.go(app.secciones.seccionfin);
 	}
 
 

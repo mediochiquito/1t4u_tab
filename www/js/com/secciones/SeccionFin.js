@@ -4,39 +4,51 @@ function SeccionFin()
 	this.main.id = 'SeccionFin';
 	this.ocultar(0);
 	
-	var promo = new Image()
-	promo.src = 'img/home/promo.png';
-	promo.id = 'SeccionHome_promo';
-	$(this.main).append(promo);
+	var layout = new Image()
+	layout.src = 'img/fin.png';
+	layout.id = 'SeccionSeleccion_layout';
+	$(this.main).append(layout);
 
-	var btn_mapa = new Boton2Frames('img/home/btn_mapa.png', 45, 130, doVerMapa);
-	btn_mapa.main.id = 'SeccionHome_btn_mapa';
-	$(this.main).append(btn_mapa.main);
+	this._set = function ($data){
 
-	var btn_descuentos = new Boton2Frames('img/home/btn_descuentos.png', 69, 130, doVerDescuentos)
-	btn_descuentos.main.id = 'SeccionHome_btn_descuentos'
-	$(this.main).append(btn_descuentos.main)
+ 			app.db.transaction(function (tx) {
+	        	
+				tx.executeSql('INSERT OR IGNORE INTO "registro" ("registro_nombre","registro_apellido","registro_ci","registro_dir","registro_tel", "registro_email", "registro_id_disenador", "registro_fecha_hora") VALUES (?,?,?,?,?,?,?,DATETIME("NOW"))', 
+														  [
+														 
+														  app.secciones.seccionregistro.txt_nombre.getValor(), 
+														  app.secciones.seccionregistro.txt_apellido.getValor(), 
+														  app.secciones.seccionregistro.txt_ci.getValor(), 
+														  app.secciones.seccionregistro.txt_dir.getValor(), 
+														  app.secciones.seccionregistro.txt_tel.getValor(),
+														  app.secciones.seccionregistro.txt_email.getValor(),
+														  app.disenador_elegido
 
-	var btn_eventos = new Boton2Frames('img/home/btn_eventos.png', 47, 130, doVerEventos)
-	btn_eventos.main.id = 'SeccionHome_btn_eventos'
-	$(this.main).append(btn_eventos.main)
+														  ], function(){
 
-	function doVerDescuentos(){
 
-		app.secciones.go(app.secciones.seccioneventosofertas, 300, {solapa: 'ofertas'});
+															var event = jQuery.Event( "click_item_dise" );
+															event.id = 0
+															$(document).trigger( event );
+															
+															setTimeout(function (){
+
+																app.secciones.go(app.secciones.seccionseleccion);
+
+															}, 3000);
+															
+
+														  }, function(){
+
+														  	app.alerta('Ocurrio un error al insertar el registro!')
+
+														  });
+	
+			}, app.db_errorGeneral);
 
 	}
 
-	function doVerEventos(){
-		app.secciones.go(app.secciones.seccioneventosofertas, 300, {solapa: 'eventos'});
-	}
 
-
-	function doVerMapa(){
-
-		app.secciones.go(app.secciones.seccionmapa);
-
-	}
 
 }
 SeccionFin.prototype = new Base_Seccion();
