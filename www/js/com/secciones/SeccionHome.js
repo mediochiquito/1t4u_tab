@@ -9,7 +9,7 @@ function SeccionHome()
 	placa0.id = 'SeccionHome_placa0';
 	$(this.main).append(placa0);
 
-	var btn = new Boton2Frames('img/btn_participa.png', 239, 160, doVerRegistro)
+	var btn = new Boton2Frames('img/btn_participa.png', 239, 220, doVerRegistro)
 	btn.main.id = 'SeccionHome_btn'
 	$(this.main).append(btn.main)
 

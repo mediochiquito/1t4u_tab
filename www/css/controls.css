@@ -115,6 +115,7 @@
 
 .Boton2Frames{
 	overflow: hidden;
+	position: absolute;
 }
 
 .Boton2Frames img{

@@ -142,7 +142,7 @@ body{
 
 
 #SeccionSeleccion{
-
+	background-color: #eb6621;
 	position: absolute;
 }
 #SeccionSeleccion_titulo{
@@ -152,14 +152,37 @@ body{
 }
 
 
-.ItemDisenador{
 
-	
+.ItemDisenador{
+	position: relative;
+	float: left;
+	width: 180px;
+	height: 210px;
 }
 
+.SeccionSeleccion_img_disenador{
+	position: absolute;
+	top: 0px;
 
+}
 
+.ItemDisenador_holder_confirmar{
+	
+	position: absolute;
+	top:100px;
+	left: 2px;
+	display: none;
+}
+.SeccionSeleccion_page{
 
+}
+.SeccionSeleccion_cinta{
+
+	position: absolute;
+	top: 40px;
+	left: 2px;
+	display: none;
+}
 
 
 

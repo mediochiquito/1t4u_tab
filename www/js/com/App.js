@@ -101,14 +101,7 @@ function App(){
 
 		if(app.is_phonegap()){
 
-		    if ( device.platform == 'android' || device.platform == 'Android' ) {
-		    	//app.plataforma = 'android';
-		    }
-			else {
-			   app.plataforma = 'ios';
-			   StatusBar.hide();
-			}
-
+		    udid = device.uuid
    		}
    		
    

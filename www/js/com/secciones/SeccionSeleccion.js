@@ -11,13 +11,30 @@ function SeccionSeleccion()
 
 
 
+	var page1 = document.createElement('div');
+	var page2 = document.createElement('div');
+	var page3 = document.createElement('div');
 
-	var ItemDisenador1 = new ItemDisenador(1);
-	$(this.main).append(ItemDisenador1.main);
+	for(var i=1;i<=8;i++){
 
-	var ItemDisenador2 = new ItemDisenador(2);
-	$(this.main).append(ItemDisenador2.main);
+		$(page1).append(new ItemDisenador(i).main)
+	}
+	for(var i=9;i<=16;i++){
 
+		$(page2).append(new ItemDisenador(i).main)
+	}
+	for(var i=17;i<=22;i++){
+
+		$(page3).append(new ItemDisenador(i).main)
+	}
+
+	var array = new Array(page1, page2, page3)
+
+
+	var touch_slide = new TouchSlide(170, 150, 720, 500, array);
+
+	$(this.main).append(touch_slide.main);
 	
 }
+
 SeccionSeleccion.prototype = new Base_Seccion();
