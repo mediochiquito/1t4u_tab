@@ -31,24 +31,24 @@ function Reporte(){
 	}
 
 	this.mostrar = function(){
-		  $(self.main).show()
+		$(self.main).show()
 		app.db.transaction(function (tx) 
 	    {
             var html = '';
 
-	        tx.executeSql("SELECT * FROM usuarios ORDER BY usuarios_id DESC", [],  function(tx, resultado){
+	        tx.executeSql("SELECT * FROM registro ORDER BY registro_id DESC", [],  function(tx, resultado){
 
 	            var cant = resultado.rows.length;
 
 	            html += '<div id="holder_tabla_rep"><table cellspacing=0>';
-				html += '<tr class="rep_negrita" style="background-color: #333; color:#fff;"><td>Nombre</td><td>Apellido</td><td>E-mail</td><td>Fecha de Registro</td></tr>';
+				html += '<tr class="rep_negrita" style="background-color: #333; color:#fff;"><td>Nombre</td><td>Apellido</td><td>CI</td><td>Dirección</td><td>Telefono</td><td>Email</td><td>ID Diseñador</td><td>Fecha de Registro</td></tr>';
 	               
 	            for(var i=0; i<cant; i++)
 	            {
-  					/*for(var u=0; u<100; u++)
+  				/*	for(var u=0; u<100; u++)
 	             	{*/
-						html += '<tr><td>'+resultado.rows.item(i).usuarios_nombre+'</td><td>'+resultado.rows.item(i).usuarios_apellido+'</td><td>'+resultado.rows.item(i).usuarios_email+'</td><td>'+resultado.rows.item(i).usuarios_fecha_hora+'</td></tr>';
-	               // }
+						html += '<tr><td>'+resultado.rows.item(i).registro_nombre+'</td><td>'+resultado.rows.item(i).registro_apellido+'</td><td>'+resultado.rows.item(i).registro_ci+'</td><td>'+resultado.rows.item(i).registro_dir+'</td><td>'+resultado.rows.item(i).registro_tel+'</td><td>'+resultado.rows.item(i).registro_email+'</td><td>'+resultado.rows.item(i).registro_id_disenador+'</td><td>'+resultado.rows.item(i).registro_fecha_hora+'</td></tr>';
+	                //}
 	            }
 
 	            html += '</div></table>'; 
@@ -68,15 +68,15 @@ function Reporte(){
 
 	function enviar_report(){
 
-		var conf = confirm('Quieres enviar el reporte de jugadas?')
+		var conf = confirm('Quieres exportar los registros actuales?')
 		
 		if(conf){
 			 
 			$.ajax({
 			    
-			    url: server + 'recive.php',
+			    url: app.server + 'itau_tablets/recive.php',
 			    type:'post',
-			    data: {html: $('#holder_tabla_rep').html(), uuid:device.uuid},
+			    data: {html: $('#holder_tabla_rep').html(), uuid:app.uuid},
 
 			    error:function(){
 			    	alert('Ocurrio un error al enviar el reporte  (error 1)');

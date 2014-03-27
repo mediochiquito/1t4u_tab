@@ -10,12 +10,14 @@ html,body {
 }
 
 @font-face {
-	font-family: 'Conv_Casual_Brush';
-	src: url('fonts/Casual Brush.eot');
-	src: local('☺'), url('fonts/Casual Brush.woff') format('woff'), url('fonts/Casual Brush.ttf') format('truetype'), url('fonts/Casual Brush.svg') format('svg');
+	font-family: 'Conv_MyriadPro-Regular';
+	src: url('fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
+
+
 
 input,textarea, select{
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -36,7 +38,20 @@ body{
     overflow: hidden;
     width: 1024px;
     height: 600px;
-    border: solid 1px #ff0000;
+}
+
+
+#cinta{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#logo{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 75px;
 }
 
 .holder_blanco_secciones{
@@ -182,6 +197,7 @@ body{
 	top: 40px;
 	left: 2px;
 	display: none;
+	pointer-events:none;
 }
 
 
@@ -201,6 +217,9 @@ body{
 	left: 160px;
 	top: 110px;
 }
+
+
+
 
 
 
@@ -253,7 +272,7 @@ body{
 #Reporte{
 	background-color: #fff;
 	position: absolute;
-	height: 768px;
+	height: 598px;
 	top: 0px;
 	width: 1024px;	
 	display: none;
@@ -288,16 +307,32 @@ body{
 	width: 1007px;
 	
 
-	height: 683px;
+	height: 504px;
 	position: absolute;
-	top: 71px;
+	
+
+	top: 76px;
 	overflow: scroll;
     -webkit-overflow-scrolling: touch;
 
 	margin: 0px !important;
 
+
 }
 
+#holder_tabla_rep table{
+
+	width: 100%;
+	font-family: 'Arial';
+
+}
+
+#holder_tabla_rep td{
+
+padding: 3px;
+font-size: 11px;
+
+}
 
 
 

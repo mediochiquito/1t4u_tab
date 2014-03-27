@@ -98,7 +98,7 @@ temp_x_holder = 0
 		
 		var tiempo_dif = new Date().getTime() - t0;
 		
-		if(tiempo_dif < 150 && Math.abs(temp_x_holder) > 30 ){
+		if(tiempo_dif < 150 && Math.abs(temp_x_holder) > 20 ){
 			if(temp_x_holder < 0){
 				actual++;
 			}else if(temp_x_holder > 0){

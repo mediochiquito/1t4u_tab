@@ -25,7 +25,7 @@ function Secciones(){
 
 	var historia = new Array()
 
-	document.addEventListener("backbutton", backKeyDown, false);
+	//document.addEventListener("backbutton", backKeyDown, false);
 
 	var obj_seccion_actual = null;	
 	var cambiando_historia = false;

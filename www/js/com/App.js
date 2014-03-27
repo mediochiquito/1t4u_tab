@@ -9,10 +9,10 @@ function App(){
 	this.secciones = null;
 	this.lightbox = null;
 	this.header = null;
-	this.server = 'http://metamorf.com/';
+	this.server = 'http://dev.metamorf.com.uy/';
 
 	this.disenador_elegido = 0
-	this.udid = 'web'
+	this.uuid = 'web'
 
 	var tablas_creadas = 0;
 	var array_tablas_a_crear;
@@ -104,15 +104,25 @@ function App(){
 
 		if(app.is_phonegap()){
 
-		    udid = device.uuid
+		    uuid = device.uuid
    		}
    		
    
         self.ancho = window.innerWidth;
 		self.alto = window.innerHeight;
-		//if(self.alto<480) self.alto = 480;
 
-		//$(self.main).css({width:self.ancho, height:self.alto})
+	 
+		if( self.ancho<1024) self.ancho = 1024;
+		if( self.alto<600) self.alto = 600;
+		
+
+		if(window.innerWidth<1024 || window.innerHeight<600){
+
+			$(self.main).css('transform-origin', '0 0');
+			$(self.main).transition({scale: [(window.innerWidth/1024), (window.innerHeight/600)]}, 0);
+
+		}
+
 
 		self.secciones = new Secciones()
 		$(self.main).append(self.secciones.main)
@@ -129,6 +139,17 @@ function App(){
 		self.reportes = new Reporte()
 
 		$('body').append(self.reportes.main);
+
+
+	var logo = new Image()
+	logo.src = 'img/icon.png';
+	logo.id = 'logo';
+	$(self.main).append(logo);
+
+var cinta = new Image()
+	cinta.src = 'img/cinta.png';
+	cinta.id = 'cinta';
+	$(self.main).append(cinta);
 
 
         

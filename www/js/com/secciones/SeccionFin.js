@@ -33,7 +33,15 @@ function SeccionFin()
 															
 															setTimeout(function (){
 
-																//app.secciones.go(app.secciones.seccionhome);
+																app.secciones.go(app.secciones.seccionhome);
+
+																 app.secciones.seccionregistro.txt_nombre.setValor(''); 
+														  app.secciones.seccionregistro.txt_apellido.setValor(''); 
+														  app.secciones.seccionregistro.txt_ci.setValor(''); 
+														  app.secciones.seccionregistro.txt_dir.setValor(''); 
+														  app.secciones.seccionregistro.txt_tel.setValor('');
+														  app.secciones.seccionregistro.txt_email.setValor('');
+
 
 															}, 3000);
 															
