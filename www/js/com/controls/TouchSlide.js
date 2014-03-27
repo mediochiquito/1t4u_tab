@@ -49,7 +49,7 @@ function TouchSlide(x,y,$ancho,$alto,$arr_slides_content){
 		}else{
 			self.main.addEventListener("mousedown", onTouchStart, false);
 			document.addEventListener("mouseup", onTouchEnd, 	false);
-			self.main.addEventListener("mousemove", onTouchMove, false);
+			self.main.addEventListener("mousemove", onTouchMove);
 		}
 
 	}, 100)
@@ -139,7 +139,7 @@ function TouchSlide(x,y,$ancho,$alto,$arr_slides_content){
 			temp_x_holder = (e.pageX - xo) - xs;
 		}
 	
-		if(moviendo)
-			$(holder).transition({x:x_holder + temp_x_holder}, 0);
+		if(moviendo) $(holder).css('-webkit-transform', 'translate(' + (x_holder + temp_x_holder) + 'px, 0px)');
+	//$(holder).transition({x:x_holder + temp_x_holder}, 0);
 	}
 }

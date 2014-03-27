@@ -159,6 +159,11 @@ body{
 #SeccionSeleccion{
 	background-color: #eb6621;
 	position: absolute;
+
+}
+
+#SeccionSeleccion div{
+
 }
 #SeccionSeleccion_titulo{
 	position: absolute;
