@@ -141,15 +141,15 @@ function App(){
 		$('body').append(self.reportes.main);
 
 
-	var logo = new Image()
-	logo.src = 'img/icon.png';
-	logo.id = 'logo';
-	$(self.main).append(logo);
+		var logo = new Image()
+		logo.src = 'img/icon.png';
+		logo.id = 'logo';
+		$(self.main).append(logo);
 
-var cinta = new Image()
-	cinta.src = 'img/cinta.png';
-	cinta.id = 'cinta';
-	$(self.main).append(cinta);
+		var cinta = new Image()
+			cinta.src = 'img/cinta.png';
+			cinta.id = 'cinta';
+			$(self.main).append(cinta);
 
 
         
