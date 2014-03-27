@@ -31,7 +31,7 @@ function SeccionSeleccion()
 	var array = new Array(page1, page2, page3)
 
 
-	var touch_slide = new TouchSlide(170, 150, 720, 500, array);
+	var touch_slide = new TouchSlide(170, 140, 720, 500, array);
 
 	$(this.main).append(touch_slide.main);
 	
