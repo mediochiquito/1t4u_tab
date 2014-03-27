@@ -111,17 +111,18 @@ function App(){
         self.ancho = window.innerWidth;
 		self.alto = window.innerHeight;
 
-	 
-		if( self.ancho<1024) self.ancho = 1024;
+	 	
+	
+		/*if( self.ancho<1024) self.ancho = 1024;
 		if( self.alto<600) self.alto = 600;
 		
-
+	
 		if(window.innerWidth<1024 || window.innerHeight<600){
 
 			$(self.main).css('transform-origin', '0 0');
 			$(self.main).transition({scale: [(window.innerWidth/1024), (window.innerHeight/600)]}, 0);
 
-		}
+		}*/
 
 		self.secciones = new Secciones()
 		$(self.main).append(self.secciones.main)
@@ -156,6 +157,9 @@ var cinta = new Image()
         	crear_db(tx)
 		}, app.db_errorGeneral);
       
+
+      $('#app').css('height' , self.alto )
+
 
 	}
 
