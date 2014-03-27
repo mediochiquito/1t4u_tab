@@ -21,20 +21,20 @@ function SeccionRegistro()
 	this.txt_apellido.main.id = 'SeccionRegistro_txt_apellido';
 	$(this.main).append(this.txt_apellido.main);
 
-	this.txt_ci = new InputText(388, 'text', 8);
+	this.txt_ci = new InputText(388, 'tel', 255);
 	this.txt_ci.main.id = 'SeccionRegistro_txt_ci';
 	$(this.main).append(this.txt_ci.main);
-	$(this.txt_ci.main).numeric();
+
 
 	this.txt_dir = new InputText(388, 'text', 255);
 	this.txt_dir.main.id = 'SeccionRegistro_txt_dir';
 	$(this.main).append(this.txt_dir.main);
 
-	this.txt_tel = new InputText(388, 'text', 255);
+	this.txt_tel = new InputText(388, 'tel', 255);
 	this.txt_tel.main.id = 'SeccionRegistro_txt_tel';
 	$(this.main).append(this.txt_tel.main);
 
-	this.txt_email = new InputText(388, 'text', 255);
+	this.txt_email = new InputText(388, 'email', 255);
 	this.txt_email.main.id = 'SeccionRegistro_txt_email';
 	$(this.main).append(this.txt_email.main);
 	
