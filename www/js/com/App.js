@@ -112,7 +112,7 @@ function App(){
 		self.alto = window.innerHeight;
 
 	 
-		/*if( self.ancho<1024) self.ancho = 1024;
+		if( self.ancho<1024) self.ancho = 1024;
 		if( self.alto<600) self.alto = 600;
 		
 
@@ -123,7 +123,6 @@ function App(){
 
 		}
 
-*/
 		self.secciones = new Secciones()
 		$(self.main).append(self.secciones.main)
 		

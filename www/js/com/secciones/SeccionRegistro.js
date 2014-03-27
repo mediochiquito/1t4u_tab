@@ -46,7 +46,7 @@ function SeccionRegistro()
 	function doEnviar(){
 
 		var r = true;
-
+		
 		if(app.secciones.seccionregistro.txt_nombre.getValor()=='') {r = false;}
 		if(app.secciones.seccionregistro.txt_apellido.getValor()=='') { r = false;}
 		if(app.secciones.seccionregistro.txt_ci.getValor()=='') { r = false;}

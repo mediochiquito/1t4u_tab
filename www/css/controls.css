@@ -36,7 +36,7 @@
 	
 	padding: 0px 10px 0px 10px;
 	outline: none;
-	font-family: 'Conv_MyriadPro-Regular';
+	font-family: 'Arial';
 	font-size: 12px;
 	-webkit-appearance: none;
 	height: 36px;
@@ -44,7 +44,7 @@
 	background-color: transparent;
 
 	color: #fff;
-	text-align: center;
+	text-align: left;
 	font-size: 31px;
 	border: none;
 }
