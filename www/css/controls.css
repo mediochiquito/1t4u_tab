@@ -38,10 +38,10 @@
 	outline: none;
 	font-family: 'Conv_MyriadPro-Regular';
 	font-size: 12px;
-	/*-webkit-appearance: none;*/
+	-webkit-appearance: none;
 	height: 36px;
 	position: absolute;
-	/*background-color: transparent;*/
+	background-color: transparent;
 
 	color: #fff;
 	text-align: center;
