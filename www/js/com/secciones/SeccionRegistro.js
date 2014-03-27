@@ -21,10 +21,9 @@ function SeccionRegistro()
 	this.txt_apellido.main.id = 'SeccionRegistro_txt_apellido';
 	$(this.main).append(this.txt_apellido.main);
 
-	this.txt_ci = new InputText(388, 'tel', 255);
+	this.txt_ci = new InputText(388, 'tel', 8);
 	this.txt_ci.main.id = 'SeccionRegistro_txt_ci';
 	$(this.main).append(this.txt_ci.main);
-
 
 	this.txt_dir = new InputText(388, 'text', 255);
 	this.txt_dir.main.id = 'SeccionRegistro_txt_dir';
@@ -70,6 +69,7 @@ function SeccionRegistro()
 
 					})
 				});
+
 
 				       
 				
