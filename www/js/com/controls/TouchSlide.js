@@ -80,10 +80,10 @@ function TouchSlide(x,y,$ancho,$alto,$arr_slides_content){
 		
 	function onTouchStart(e){
 		
-		e.preventDefault();
+		//e.preventDefault();
 		t0 = new Date().getTime();
 		moviendo = true;
-temp_x_holder = 0
+		temp_x_holder = 0
 		if(app.es_touch()){
 			xs = e.touches[0].pageX - xo;
 			ini_x = e.touches[0].pageX
@@ -140,6 +140,6 @@ temp_x_holder = 0
 		}
 	
 		if(moviendo)
-			$(holder).transition({x:x_holder + temp_x_holder},0);
+			$(holder).transition({x:x_holder + temp_x_holder}, 0);
 	}
 }

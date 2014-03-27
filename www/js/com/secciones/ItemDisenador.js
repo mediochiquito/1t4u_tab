@@ -60,7 +60,6 @@ function ItemDisenador($id)
 
 	function doClickSeleccion(){
 
-		alert('asdasd')
 		app.disenador_elegido = $id;
 		var event = jQuery.Event( "click_item_dise" );
 		event.id = $id;

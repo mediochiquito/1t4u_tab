@@ -22,7 +22,7 @@
 
     <access origin="*" />
     
-    <name>Todo diseñador tiene un ángel</name>
+    <name>Itau diseño</name>
     
     <description>
      
@@ -50,7 +50,7 @@
         Hardeep Shoker 
     </author>
     
-    
+
     <gap:platform name="android" />
      
     <gap:plugin name="org.apache.cordova.device" />
