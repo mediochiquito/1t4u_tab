@@ -104,7 +104,7 @@ function App(){
 
 		if(app.is_phonegap()){
 
-		    uuid = device.uuid
+		    self.uuid = device.uuid
    		}
    		
    
