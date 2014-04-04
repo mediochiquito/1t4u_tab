@@ -113,7 +113,13 @@ function App(){
 
 	 	
 	
-		if( self.ancho<1024) self.ancho = 1024;
+		
+
+
+		//$('#app').css('height', self.alto)
+
+
+	/*	if( self.ancho<1024) self.ancho = 1024;
 		if( self.alto<600) self.alto = 600;
 		
 	
@@ -122,7 +128,7 @@ function App(){
 			$(self.main).css('transform-origin', '0 0');
 			$(self.main).transition({scale: [(window.innerWidth/1024), (window.innerHeight/600)]}, 0);
 
-		}
+		}*/
 
 		self.secciones = new Secciones()
 		$(self.main).append(self.secciones.main)
@@ -158,7 +164,7 @@ function App(){
 		}, app.db_errorGeneral);
       
 
-      $('#app').css('height' , self.alto )
+      $('#app').css('height' , 600 )
 
 
 	}
